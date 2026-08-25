@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+<defs>
+ <radialGradient id="bg"><stop offset="0" stop-color="#3a3222"/><stop offset=".55" stop-color="#17150f"/><stop offset="1" stop-color="#090908"/></radialGradient>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0a8"/><stop offset=".28" stop-color="#e9be55"/><stop offset=".6" stop-color="#a96f16"/><stop offset=".82" stop-color="#f5d77e"/><stop offset="1" stop-color="#8d5a13"/></linearGradient>
+ <radialGradient id="gem"><stop stop-color="#fff"/><stop offset=".25" stop-color="#eaf2ff"/><stop offset=".6" stop-color="#a9bfd9"/><stop offset="1" stop-color="#4c5c75"/></radialGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="600" height="600" rx="36" fill="url(#bg)"/>
+<ellipse cx="300" cy="505" rx="190" ry="22" fill="#000" opacity=".55" filter="url(#shadow)"/>
+<g fill="url(#gem)" stroke="url(#g)" stroke-width="11"><path d="M210 180 C165 230 185 285 235 315 L255 280 C225 255 225 225 245 205Z"/><path d="M390 180 C435 230 415 285 365 315 L345 280 C375 255 375 225 355 205Z"/></g><g fill="#f5d77e"><circle cx="240" cy="360" r="25"/><circle cx="360" cy="360" r="25"/></g>
+</svg>
