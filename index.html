@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0a">
+  <meta name="description" content="Milestone Enterprises — premium gold, diamond and silver jewellery.">
+  <title>Milestone Enterprises | Jewellery</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <div>✦ Hallmark / certificate details where applicable</div>
+    <div>Insured shipping available</div>
+    <div>Exchange policy applies</div>
+  </div>
+
+  <header class="site-header">
+    <div class="topbar container">
+      <button class="icon-btn mobile-only" id="menuBtn" aria-label="Open menu">☰</button>
+      <a class="brand" href="#home" aria-label="Milestone Enterprises home">
+        <span class="brand-mark">M</span>
+        <span><strong>MILESTONE</strong><small>ENTERPRISES</small><em>JEWELLERY · GOLD · DIAMOND · SILVER</em></span>
+      </a>
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Search necklace, ring, earrings..." aria-label="Search jewellery">
+        <button id="searchBtn" aria-label="Search">⌕</button>
+      </div>
+      <div class="header-actions">
+        <button class="head-action" id="wishlistBtn"><span>♡</span><small>Wishlist <b id="wishCount">0</b></small></button>
+        <button class="head-action" id="trackBtn"><span>◷</span><small>Track Order</small></button>
+        <button class="head-action cart-head" id="cartBtn"><span>🛍</span><small>Cart <b id="cartCount">0</b></small></button>
+      </div>
+    </div>
+    <nav id="nav" class="nav">
+      <div class="container nav-inner">
+        <a class="active" href="#home">HOME</a>
+        <button data-category="Rings">RINGS</button>
+        <button data-category="Earrings">EARRINGS</button>
+        <button data-category="Necklace">NECKLACE</button>
+        <button data-category="Bangles">BANGLES</button>
+        <button data-category="Bracelets">BRACELETS</button>
+        <button data-category="Mangalsutra">MANGALSUTRA</button>
+        <button data-category="Bridal Jewellery">BRIDAL COLLECTION</button>
+        <button data-category="Men's Jewellery">MEN'S JEWELLERY</button>
+        <button data-category="Diamond Jewellery">DIAMOND</button>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-copy container">
+        <p class="eyebrow">THE ART OF TIMELESS JEWELLERY</p>
+        <h1>Timeless beauty.<br><span>Treasure every moment.</span></h1>
+        <p>Discover refined gold, diamond and silver jewellery crafted to become part of your story.</p>
+        <div class="hero-actions">
+          <button class="btn gold" data-scroll="#collection">SHOP COLLECTION</button>
+          <button class="btn outline" data-category="Bridal Jewellery">EXPLORE BRIDAL</button>
+        </div>
+      </div>
+      <div class="hero-jewel" aria-hidden="true">
+        <div class="jewel-necklace"></div><div class="jewel-pendant"></div>
+      </div>
+      <div class="hero-dots"><i class="active"></i><i></i><i></i></div>
+    </section>
+
+    <section class="category-strip container">
+      <button data-category="Rings"><img src="/assets/jewellery-1.svg"><strong>RINGS</strong><span>View collection →</span></button>
+      <button data-category="Earrings"><img src="/assets/jewellery-3.svg"><strong>EARRINGS</strong><span>View collection →</span></button>
+      <button data-category="Necklace"><img src="/assets/jewellery-2.svg"><strong>NECKLACE</strong><span>View collection →</span></button>
+      <button data-category="Bangles"><img src="/assets/jewellery-4.svg"><strong>BANGLES</strong><span>View collection →</span></button>
+      <button data-category="Bracelets"><img src="/assets/jewellery-5.svg"><strong>BRACELETS</strong><span>View collection →</span></button>
+      <button data-category="Mangalsutra"><img src="/assets/jewellery-7.svg"><strong>MANGALSUTRA</strong><span>View collection →</span></button>
+      <button data-category="Bridal Jewellery"><img src="/assets/jewellery-2.svg"><strong>BRIDAL</strong><span>View collection →</span></button>
+      <button data-category="Men's Jewellery"><img src="/assets/jewellery-8.svg"><strong>MEN'S</strong><span>View collection →</span></button>
+    </section>
+
+    <section class="trustbar">
+      <div class="container trust-grid">
+        <div><b>◈</b><span><strong>Verified details</strong><small>Hallmark / certificate where applicable</small></span></div>
+        <div><b>◇</b><span><strong>Easy assistance</strong><small>Exchange subject to policy</small></span></div>
+        <div><b>▣</b><span><strong>Insured shipping</strong><small>Across India</small></span></div>
+        <div><b>↻</b><span><strong>Exchange support</strong><small>Terms apply</small></span></div>
+        <div><b>◉</b><span><strong>Personal assistance</strong><small>WhatsApp consultation</small></span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="collection">
+      <div class="section-head">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured collection</h2></div>
+        <button class="text-btn" id="allProductsBtn">View all pieces →</button>
+      </div>
+      <div class="filter-row">
+        <button class="filter active" data-filter="All">All</button>
+        <button class="filter" data-filter="Rings">Rings</button>
+        <button class="filter" data-filter="Earrings">Earrings</button>
+        <button class="filter" data-filter="Necklace">Necklace</button>
+        <button class="filter" data-filter="Bangles">Bangles</button>
+        <button class="filter" data-filter="Bracelets">Bracelets</button>
+      </div>
+      <div class="product-grid" id="productGrid"><div class="loading">Loading collection…</div></div>
+    </section>
+
+    <section class="feature-panels container">
+      <article class="rate-panel">
+        <div class="panel-kicker">TODAY'S GOLD RATE</div>
+        <p class="muted">Indicative rate — verify at checkout</p>
+        <div class="rate-row"><span>22K Gold / 10g</span><strong>₹72,650</strong></div>
+        <div class="rate-row"><span>18K Gold / 10g</span><strong>₹59,420</strong></div>
+        <button class="btn small outline" id="rateBtn">RATE INFORMATION</button>
+      </article>
+      <article class="promo bridal">
+        <span>FOR YOUR MOST SPECIAL DAY</span><h3>Bridal Collection</h3><p>Heritage-inspired pieces for the modern bride.</p>
+        <button class="btn small gold" data-category="Bridal Jewellery">EXPLORE NOW</button>
+      </article>
+      <article class="promo diamond">
+        <span>BRILLIANCE THAT LASTS</span><h3>Diamond Collection</h3><p>Elegant silhouettes designed to be remembered.</p>
+        <button class="btn small outline" data-category="Diamond Jewellery">SHOP DIAMONDS</button>
+      </article>
+      <article class="whatsapp-panel">
+        <div class="wa-icon">◉</div><div><span>JEWELLERY CONSULTANT</span><h3>Need help choosing?</h3><p>Chat with our team for product details, sizes and offers.</p></div>
+        <button class="btn dark" id="whatsappBtn">CHAT ON WHATSAPP</button>
+      </article>
+    </section>
+
+    <section class="numbers">
+      <div class="container number-grid">
+        <div><strong>VERIFIED</strong><span>Product details</span></div>
+        <div><strong>SECURE</strong><span>Checkout flow</span></div>
+        <div><strong>24×7</strong><span>Enquiry support</span></div>
+        <div><strong>PAN INDIA</strong><span>Delivery options</span></div>
+        <div><strong>CURATED</strong><span>Jewellery designs</span></div>
+      </div>
+    </section>
+
+    <section class="section story container">
+      <div class="story-copy"><p class="eyebrow">CRAFTED WITH INTENTION</p><h2>Jewellery that marks your milestones.</h2><p>From a first promise to a forever celebration, Milestone Enterprises brings together elegant silhouettes, traditional inspiration and contemporary finishing.</p><button class="text-btn" id="aboutBtn">Our promise →</button></div>
+      <div class="story-card"><div class="ring-orbit"></div><span>EST. FOR EVERY<br><b>MILESTONE</b></span></div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div><p class="eyebrow">STAY IN THE KNOW</p><h2>New collections, private offers & inspiration.</h2></div>
+        <form id="newsletterForm"><input type="email" required placeholder="Your email address"><button class="btn gold">SUBSCRIBE</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark">M</span><span><strong>MILESTONE</strong><small>ENTERPRISES</small></span></a><p>Where craftsmanship meets trust. Discover jewellery designed to celebrate every milestone.</p></div>
+      <div><h4>QUICK LINKS</h4><button data-modal="about">About us</button><button data-modal="policies">Policies</button><button id="footerTrack">Track order</button><button data-modal="terms">Terms & conditions</button></div>
+      <div><h4>SHOP</h4><button data-category="Gold Jewellery">Gold Jewellery</button><button data-category="Diamond Jewellery">Diamond Jewellery</button><button data-category="Silver Jewellery">Silver Jewellery</button><button data-category="Bridal Jewellery">Bridal Collection</button></div>
+      <div><h4>CONTACT</h4><p id="footerContact">India · Jewellery Consultation</p><button id="footerWhatsApp">WhatsApp us →</button><a id="emailLink" href="#">Email us →</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Milestone Enterprises. All rights reserved.</span><span>Payments & delivery subject to store policies.</span></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h2>Your cart</h2><button class="close" data-close>×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><small>Shipping is free on orders ₹1,00,000+; otherwise ₹499.</small><button class="btn gold wide" id="checkoutBtn">PROCEED TO CHECKOUT</button></div>
+  </aside>
+
+  <div class="modal" id="productModal"><div class="modal-card product-modal"><button class="close" data-close>×</button><div id="productDetail"></div></div></div>
+  <div class="modal" id="checkoutModal"><div class="modal-card checkout-modal"><button class="close" data-close>×</button><div class="modal-title"><p class="eyebrow">SECURE CHECKOUT</p><h2>Complete your order</h2></div><form id="checkoutForm" class="checkout-form">
+    <div class="form-grid"><label>Full name*<input name="customer_name" required maxlength="80"></label><label>Mobile number*<input name="phone" required inputmode="tel" maxlength="16"></label><label>Email<input name="email" type="email" maxlength="120"></label><label>Pincode*<input name="pincode" required inputmode="numeric" maxlength="6"></label><label>City*<input name="city" required maxlength="60"></label><label>State*<input name="state" required maxlength="60"></label></div>
+    <label>Address line 1*<input name="address_line1" required maxlength="160"></label><label>Address line 2<input name="address_line2" maxlength="160"></label><label>Order note<input name="notes" maxlength="300" placeholder="Optional"></label>
+    <div class="pay-choice"><button type="button" class="pay-option active" data-pay="COD"><b>Cash on delivery</b><span>Pay when your order arrives.</span></button><button type="button" class="pay-option" data-pay="WHATSAPP"><b>Confirm on WhatsApp</b><span>We'll contact you before dispatch.</span></button><button type="button" class="pay-option online-pay" data-pay="RAZORPAY"><b>Pay online</b><span>UPI, cards and supported methods.</span></button></div>
+    <input type="hidden" name="payment_method" value="COD"><div class="checkout-total"><span>Total</span><strong id="checkoutTotal">₹0</strong></div><button class="btn gold wide" type="submit">PLACE ORDER</button><p class="form-note">By placing this order you agree to our store policies. Product pricing is subject to final verification before dispatch.</p>
+  </form></div></div>
+
+  <div class="modal" id="trackModal"><div class="modal-card small-modal"><button class="close" data-close>×</button><p class="eyebrow">ORDER STATUS</p><h2>Track your order</h2><form id="trackForm"><label>Order number<input name="orderNumber" placeholder="MEJ-20260825-ABC123" required></label><label>Phone number<input name="phone" required inputmode="tel"></label><button class="btn gold wide">TRACK ORDER</button></form><div id="trackResult"></div></div></div>
+
+  <div class="modal" id="infoModal"><div class="modal-card small-modal"><button class="close" data-close>×</button><div id="infoContent"></div></div></div>
+  <div id="toast" class="toast"></div>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="/app.js" defer></script>
+</body>
+</html>

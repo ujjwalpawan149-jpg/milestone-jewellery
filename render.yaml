@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: milestone-jewellery
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: DATABASE_URL
+        sync: false
+      - key: ADMIN_KEY
+        sync: false
+      - key: STORE_NAME
+        value: "Milestone Enterprises"
+      - key: STORE_PHONE
+        sync: false
+      - key: WHATSAPP_NUMBER
+        sync: false
+      - key: STORE_EMAIL
+        sync: false
+      - key: STORE_CITY
+        value: "India"
+      - key: RAZORPAY_KEY_ID
+        sync: false
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+      - key: PUBLIC_URL
+        sync: false
